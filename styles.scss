@@ -48,7 +48,7 @@ body {
         position: relative;
         z-index: 1;
         text-align: center;
-        padding-bottom: 60px; /* Space for sun to rise */
+        padding-bottom: 0; /* Space for sun to rise */
     }
 
     .text {
@@ -59,24 +59,26 @@ body {
 
     .hi {
         font-style: italic;
-        font-size: 120px;
-        display: block;
-        line-height: 1;
-        margin-bottom: 20px;
+        font-size: 110px;
+        display: inline-block;
+        line-height: 1.5;
+        text-align: center;
     }
 
     .sunrise-text {
-        font-size: 60px;
+        font-size: 50px;
         display: block;
+        margin-bottom: 20px;
     }
 }
 
 /* Sun rises vertically behind text */
 @keyframes riseLogo {
     0% {
-        bottom: 20%;
-        transform: translateX(-50%) scale(0.8);
+        bottom: 31%;
+        transform: translateX(-100%) scale(0.8);
         opacity: 0;
+        
     }
     20% {
         opacity: 1;
@@ -85,8 +87,8 @@ body {
         filter: blur(0);
     }
     100% {
-        bottom: 60%;
-        transform: translateX(-50%) scale(1);
+        bottom: 45%;
+        transform: translateX(10%) scale(0.8);
         opacity: 1;
     }
 }
